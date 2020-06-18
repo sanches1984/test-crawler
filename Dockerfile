@@ -1,3 +1,3 @@
-FROM debian:latest
-ADD test-crawler /app
-CMD ["/app", "https://www.semrush.com"]
+FROM alpine:latest
+ADD web-crawler /app
+CMD ["/app", "https://www.habr.com", "100"]
